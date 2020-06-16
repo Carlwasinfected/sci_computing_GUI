@@ -1,4 +1,7 @@
 QT       += core gui
+QT += widgets
+QT += multimedia multimediawidgets
+QT += printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -19,16 +22,31 @@ SOURCES += \
     globalval.cpp \
     logindialog.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    pic1window.cpp \
+    pic2window.cpp \
+    pic3window.cpp \
+    pic4window.cpp \
+    pic5window.cpp
 
 HEADERS += \
     globalval.h \
     logindialog.h \
-    mainwindow.h
+    mainwindow.h \
+    pic1window.h \
+    pic2window.h \
+    pic3window.h \
+    pic4window.h \
+    pic5window.h
 
 FORMS += \
     logindialog.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    pic1window.ui \
+    pic2window.ui \
+    pic3window.ui \
+    pic4window.ui \
+    pic5window.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

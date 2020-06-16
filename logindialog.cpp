@@ -25,10 +25,10 @@ logindialog::~logindialog()
 void logindialog::CheckInputValid() {
     // check username&password is valid or not
     if (ui->UserNames_2->text().toStdString() == "carlwang99" && ui->PassWords_2->text().toStdString() == "123") {
-//        GlobalVal::cur_username = ui->UserNames_2->text();
+        GlobalVal::cur_username = ui->UserNames_2->text();
         GlobalVal::mw = new MainWindow();
         GlobalVal::mw->show();
-//        qDebug() << "cur_username from LoginWindow: " << GlobalVal::cur_username;
+        qDebug() << "cur_username from LoginWindow: " << GlobalVal::cur_username;
         qDebug() << "sucessfully login from LoginDialog.cpp" << endl;
         this->close();
     } else {

@@ -10,8 +10,9 @@ public:
     GlobalVal();
     ~GlobalVal();
 
-    static MainWindow* mw; // pointer to mainwindow
+    static QMainWindow* mw; // pointer to mainwindow
     static QString cur_username;
+    static QMediaPlayer* my_player;
 
 };
 

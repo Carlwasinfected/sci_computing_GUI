@@ -11,8 +11,9 @@ GlobalVal::~GlobalVal() {
 
 
 // init global variables
-MainWindow* GlobalVal::mw = NULL;
-QString cur_username = "Error User";
+QMainWindow* GlobalVal::mw = NULL;
+QString GlobalVal::cur_username = "Error User";
+QMediaPlayer* GlobalVal::my_player = NULL;
 
 
 
